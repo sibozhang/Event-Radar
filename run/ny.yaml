@@ -1,0 +1,47 @@
+file:
+  dir: &DIR /shared/data/czhang82/event/ny_tweets/
+  # inputs
+  tweets: !join [*DIR, tweets.txt]
+  entities: !join [*DIR, words.txt]
+  edges: !join [*DIR, word_edges.txt]
+  queries: !join [*DIR, queries.txt]
+  # outputs
+  vicinities: !join [*DIR, output_vicinities.txt]
+  experiments: !join [*DIR, output_events.txt]
+
+
+query:
+  refWindowSize: 864000
+  minSup: 10
+  K: 10
+  update: no
+  updateWindow: [60, 500, 600, 1200]
+
+
+hubseek:
+  run: yes
+  bandwidth: [0.02, 0.02, 0.05]
+  epsilon: [0.01, 0.01, 0.05]
+  eta: [0.1, 0.3, 0.5, 0.7, 0.9]
+  evalBandwidth: no
+  evalEpsilon: no
+  evalEta: no
+
+
+clustream:
+  calcVicinity: no
+  pRestart: 0.2
+  errorBound: 0.005
+  numInitClusters: 400
+  numMaxClusters: 500
+  numInitTweets: 10000
+  numTweetPeriod: 200000
+  outdatedThreshold: 864000
+
+eventweet:
+  run: no
+  numGrid: 50
+  clusteringThre: 0.001
+
+wavelet:
+  run: no

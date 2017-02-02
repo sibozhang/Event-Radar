@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="geoburst:jar">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="GeoBurst.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="GeoBurst" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/java-json.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/commons-math3-3.4.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/javaml-0.1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/mongo-java-driver-2.13.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/snakeyaml-1.16.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../lib/json-simple-1.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
