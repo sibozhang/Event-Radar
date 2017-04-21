@@ -1,0 +1,3 @@
+{"_id":{"$numberLong":"0"},"cityId":{"$numberLong":"0"},"startTS":{"$numberLong":"460822862"},"endTS":{"$numberLong":"460833662"}}
+{"_id":{"$numberLong":"1"},"cityId":{"$numberLong":"0"},"startTS":{"$numberLong":"460835381"},"endTS":{"$numberLong":"460856981"}}
+{"_id":{"$numberLong":"2"},"cityId":{"$numberLong":"0"},"startTS":{"$numberLong":"460911388"},"endTS":{"$numberLong":"460932988"}}
